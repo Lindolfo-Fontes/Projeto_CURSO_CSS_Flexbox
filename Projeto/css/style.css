@@ -1,0 +1,280 @@
+body{
+    background: var(--cor-bg);
+    color: var(--cor-texto);
+}
+
+.menu-sup{
+    padding: 0.5%;
+    background: var(--cor-bg);
+    color: var(--cor-texto-menu);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+}
+
+.menu-logo{
+    padding: 0,1%;
+    min-width: 100px;
+    min-height: 100px;
+    width: 7%;
+    height: 7%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav-sup ul{    
+    padding: 1%;
+    list-style: none;
+    gap: 3rem;   
+    margin: 0;     
+    display: flex;
+    justify-content: flex-end;        
+}
+
+.nav-sup ul li{    
+    font-size: 1.25rem;    
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    border: solid var(--cor-texto) 1px;
+    border-radius: 20px;  
+}
+
+.nav-sup ul li a{
+    color: var(--cor-texto-menu);
+    text-decoration: none;
+}
+
+.introducao{
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;    
+    background: var(--cor-bg-titulo);    
+    display: flex;
+    justify-content: center;
+}
+
+.container-info{
+    padding: 0.25%;
+}
+
+.info-site{ 
+    max-width: 800px;             
+    margin: 5px auto;
+    display: flex;    
+    flex-wrap: wrap;    
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.card-info{ 
+    width: 20%; 
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;    
+}
+
+.container-img-info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.img-info{         
+    width: 50px;
+    height: 50px;     
+}
+
+.img-info2{       
+    width: 60px;
+    height: 40px;     
+}
+
+.titulo-info{
+    margin-top: 10px; 
+    font-size: 1rem;   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texto-info{
+    font-size: .75rem;  
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-colecoes{     
+    margin-top: 1px;
+    margin-bottom: 10px;    
+    font-size: 1.25rem;
+    font-weight: bold;     
+    background: var(--cor-bg-titulo);
+    display: flex;    
+    justify-content: center;
+}
+
+.colecoes{   
+    background-color: var(--cor-bg); 
+    padding: 0.5%;     
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;       
+}
+
+.titulo-card{
+    font-size: 1.5rem; 
+    font-weight: bold;   
+    display: flex;
+    justify-content: center;
+}
+
+.img-card-colecao{
+    border-radius: 10px;
+    margin: 5px;
+    width: 300px;
+    height: 250px;
+}
+
+.card-colecao{ 
+    margin-top: 10px; 
+    border-radius: 10px;   
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.texto-card{
+    font-size: .75rem;
+    flex-wrap: wrap;
+    width: 300px;
+    text-align: center;    
+}
+
+.barra-inf{ 
+    margin-top: 10px;   
+    background: var(--cor-bg-titulo);
+}
+
+.menu-inf{
+    margin-top: 10px;
+    background: var(--cor-bg);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cadastro-email{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    flex: 1;   
+}
+
+.solicitacao-cadastro{
+    font-size: 1.25rem;
+    flex: 1;
+}
+
+.solicitacao-email{
+    font-size: .75rem;    
+}
+
+input[type="email"]{
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: solid var(--cor-texto) 2px;
+}
+
+button{
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid var(--cor-texto) 2px;
+}
+
+.container-seguranca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.card-seguranca{
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+}
+
+.img-seguro-inf{
+    width: 30px;
+}
+
+.info-seguranca ul{
+    margin: 5px;
+    font-size: .75rem; 
+    list-style: none;
+    line-height: 1rem;
+}
+
+.nav-inf{
+    flex: 1; 
+}
+
+.nav-inf ul{
+    font-size: 1rem;    
+    padding: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    line-height: 1.5rem; 
+    text-align: right;
+    margin-right: 10px;    
+}
+
+.nav-inf ul li a{
+    color: var(--cor-texto-menu);
+    text-decoration: none;
+}
+
+.redes-rodape{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;    
+}
+
+.img-redes-rodape{
+    background-color: #000000;
+}
+
+.email-rodape{  
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.info-rodape{
+    font-size: .75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer{
+    background: var(--cor-bg-titulo);
+}
+
+
+

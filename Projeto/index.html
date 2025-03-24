@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!--1°Passo - Definir a linguagem padrão da página no <html> e ja abrir o <head> e o <body> -->
+<html lang="pt-BR">
+<!--2°Passo - No head se define o título da pagina que aparecera na aba do navegador e os links do arquivos com arquivos externos-->   
+    <head>     
+        <title>Coast Jóias</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/color.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">        
+    </head>
+<!--3°Passo - No body deve-se trabalhar as divisões do site com (div) que podem também ter divisões internas-->
+    <body>
+<!--4°Passo - No header se estrutura as navegações da página com o <nav> e listas <ul> 
+com os titulos <li> e links para outras paginas <a>-->        
+        <header class="bg-menu-sup">
+            <div class="menu-sup">
+                <div class="menu-logo">
+                    <img src="img/logo.png" alt="Logo">                   
+                </div>                
+                <nav class="nav-sup">
+                    <ul>
+                        <li><a href="#colecoes">Coleções</a></li>
+                        <li><a href="#favoritos">Favoritos</a></li>
+                        <li><a href="#sacola">Sacola</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </nav>                
+            </div>
+        </header>
+<!--5°Passo - Pode-se colocar textos soltos calssificados em tipo de titulo através do
+comando <h1>, <h2> e assim sucessivamente. O comando <br> permite a quebra de linhas para
+melhor adequação do texto-->       
+        <div class="introducao">
+            <p>JÓIAS DE QUALIDADE E GARANTIA VITALÍCIA</p>
+        </div>
+<!--6°Passo - A partir daqui começa a parte de seccionamento do corpo do site, onde vão
+imagens e descrições, é criado uma <section> para permitir essas divisões--> 
+        <section class="container-info">       
+            <div class="info-site">     
+                <div class="card-info">
+                    <div class="container-img-info">
+                        <img src="img/frete.jpg" alt="Frete" class="img-info2">
+                    </div>
+                    <p class="titulo-info">FRETE GRÁTIS</p>
+                    <p class="texto-info">Confira as Condições</p>
+                </div>
+                <div class="card-info">
+                    <div class="container-img-info">
+                        <img src="img/pinmap.jpg" alt="Pin Map" class="img-info">
+                    </div>
+                    <p class="titulo-info">ENVIAMOS</p>
+                    <p class="texto-info">para todo o Brasil</p>
+                </div>
+                <div class="card-info">
+                    <div class="container-img-info">
+                        <img src="img/cartao.jpg" alt="Cartao" class="img-info2">
+                    </div>
+                        <p class="titulo-info">PARCELAMOS</p>
+                        <p class="texto-info">Até 12x sem juros</p>
+                </div>
+                <div class="card-info">
+                    <div class="container-img-info">
+                        <img src="img/seguro.jpg" alt="Seguro" class="img-info">
+                    </div>
+                    <p class="titulo-info">100% SEGURO</p>
+                    <p class="texto-info">Certificado SSL</p>
+                </div> 
+            </div>            
+        </section>
+        <section>            
+            <div class="titulo-colecoes">
+                <p>COLEÇÕES</p>
+            </div>
+            <div class="colecoes">                
+                <div class="card-colecao">
+                    <p class="titulo-card">Pratas 925</p>                                        
+                    <div>
+                        <img src="img/pratas-925.jpg"  alt="Card Pratas 925" class="img-card-colecao">              
+                    </div>
+                    <p class="texto-card">Anéis, brincos, colares, pulseiras e mais da nossa linha de pratas 925</p>
+                </div>
+                <div class="card-colecao">
+                    <p class="titulo-card">Pratas 950</p>                                    
+                    <div>
+                        <img src="img/pratas-950.jpg"  alt="Card Pratas 950" class="img-card-colecao">              
+                    </div>
+                    <p class="texto-card">Anéis, brincos, colares, pulseiras e mais da nossa linha de pratas 950</p>
+                </div>
+                <div class="card-colecao">
+                    <p class="titulo-card">Ouro 18K</p>                                       
+                    <div>
+                        <img src="img/ouro-18K.jpg"  alt="Card Ouro 18K"  class="img-card-colecao">              
+                    </div>
+                    <p class="texto-card">Anéis, brincos, colares, pulseiras e mais da nossa linha de Ouro 18K</p> 
+                </div>
+                <div class="card-colecao">
+                    <p class="titulo-card">Ouro Branco</p>                    
+                    <div>
+                        <img src="img/ouro-branco.jpg"  alt="Card Ouro Branco"  class="img-card-colecao">              
+                    </div>
+                    <p class="texto-card">Anéis, brincos, colares, pulseiras e mais da nossa linha de Ouro branco</p>
+                </div>
+            </div>
+        </section>
+        <div class="barra-inf"><br></div>
+        <section>
+            <div  class="menu-inf">
+                <div class="cadastro-email">
+                    <p class="solicitacao-cadastro">CADASTRE-SE PARA RECEBER NOSSAS OFERTAS</p>
+                    <p class="solicitacao-email">Insira seu e-mail aqui*</p>
+                    <!--É possível criar formularios de diversos tipos e também botões, que posteriormente podem ser linkados com um banco de dados-->
+                    <form action="#" id="form-email">
+                        <input type="email" placeholder="Digite o e-mail..." required>
+                        <button type="submit">INSCREVA-SE</button>
+                    </form>
+                </div>
+                <div class="container-seguranca">
+                    <div class="info-seguranca">
+                        <div class="card-seguranca">
+                            <img src="img/seguro.jpg" alt="Seguro Inferior" class="img-seguro-inf">
+                            <p class="texto-seguro-inf">SEGURANÇA</p>
+                        </div>
+                        <ul>
+                            <li>Ambiente 100% Seguro.</li>
+                            <li>Sua Informação é Protegida</li>
+                            <li>pela Criptografia SSL 256-Bit.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="img/pag_aceito.avif" alt="Metodos Pagamento" class="img-metodos-pag">                    
+                    </div>
+                </div>
+                <nav class="nav-inf">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#colecoes">Coleções</a></li>
+                        <li><a href="#loja">Loja</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#sac">SAC</a></li>
+                        <li><a href="#entregas">Entregas</a></li>
+                        <li><a href="#politicas">Políticas</a></li>                    
+                    </ul>
+                </nav>
+            </div>
+        </section>
+<!--7°Passo - O Footer é o rodapé da página, onde geralmente vão as redes sociais e informações de localudade e segurança do site-->        
+        <footer>
+            <div class="redes-rodape">
+                <div>
+                    <img src="img/facebook.avif" alt="facebook" class="img-redes-rodape">
+                </div>
+                <div>
+                    <img src="img/x-twiter.avif" alt="x-twiter" class="img-redes-rodape">
+                </div>
+                <div>
+                    <img src="img/instagram.avif" alt="instagram" class="img-redes-rodape">
+                </div>
+            </div>
+                <p class="email-rodape">contato@coastjoias.com</p>            
+            <div class="info-rodape">
+                <p class="texto-info-rodape">© 2025 por Lindolfo Fontes</p>
+                <p class="texto-info-rodape">Coast Jóias Ltda. - CNPJ: 00.000.000/0000-01 - Av. 01, 001 Jaú, SP 12345-678</p>
+                <p class="texto-info-rodape">contato@coastjoias.com  -  Telefone: (14) 4002-8922   |   Estimativa de entrega 2 - 5 dias úteis</p>
+            </div>
+        </footer>
+    </body>
+</html>
