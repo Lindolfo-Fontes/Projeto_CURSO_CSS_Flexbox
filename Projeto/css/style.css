@@ -20,7 +20,7 @@ body{
     height: 7%;
     margin: 0 10px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start;    
 }
 
 .nav-sup ul{    
@@ -38,7 +38,8 @@ body{
     display: flex;
     justify-content: space-between;
     border: solid var(--cor-texto) 1px;
-    border-radius: 20px;  
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);  
 }
 
 .nav-sup ul li a{
@@ -155,6 +156,49 @@ body{
     text-align: center;    
 }
 
+.titulo-produtos{
+    margin-top: 1px;
+    margin-bottom: 10px;    
+    font-size: 1.25rem;
+    font-weight: bold;     
+    background: var(--cor-bg-titulo);
+    display: flex;    
+    justify-content: center;
+}
+
+.container-produtos{
+    padding: 3%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.img-card-produto{
+    border-radius: 10px;
+    margin: 5px;
+    width: 400px;
+    height: 350px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nome-produto{
+    font-size: .75rem;    
+}
+
+.preco-produto{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
 .barra-inf{ 
     margin-top: 10px;   
     background: var(--cor-bg-titulo);
@@ -172,13 +216,13 @@ body{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
-    flex: 1;   
+    justify-content: start;
+       
 }
 
 .solicitacao-cadastro{
     font-size: 1.25rem;
-    flex: 1;
+    
 }
 
 .solicitacao-email{
@@ -187,6 +231,7 @@ body{
 
 input[type="email"]{
     flex: 1;
+    width: 250px;
     padding: 8px;
     border-radius: 5px;
     border: solid var(--cor-texto) 2px;
