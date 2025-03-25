@@ -12,11 +12,13 @@ html{
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: var(--cor-bg);
+    color: var(--cor-texto);
 }
 
 img{
     display: block;
-    max-width: 100%;    
+    max-width: 100%;       
 }
 
 
